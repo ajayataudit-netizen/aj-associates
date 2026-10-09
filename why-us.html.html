@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Choose AJ Associates | Chartered Accountants Ahmedabad</title>
+    <meta name="description" content="Discover why clients trust AJ Associates: fast response, reliable expertise, problem-focused solutions, and client-first ethics.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">AJ ASSOCIATES</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="workflow.html">How We Work</a></li>
+                <li><a href="why-us.html">Why Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li class="lang-switch">
+                    <button class="lang-btn active" onclick="setLang('en')">EN</button>
+                    <button class="lang-btn" onclick="setLang('hi')">हिन्दी</button>
+                    <button class="lang-btn" onclick="setLang('gu')">ગુજરાતી</button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ENGLISH -->
+    <div id="block-en" class="lang-content-block active">
+        <div class="container">
+            <h2 class="section-title">Why Choose AJ Associates?</h2>
+            <div class="grid-4">
+                <div class="card"><h3>Fast Response</h3><p>We respect your time. Queries answered promptly before deadlines.</p></div>
+                <div class="card"><h3>Reliable Expertise</h3><p>Backed by rigorous qualifications and continuous tracking of tax laws.</p></div>
+                <div class="card"><h3>Problem-Focused</h3><p>We analyze underlying tax issues and resolve them effectively.</p></div>
+                <div class="card"><h3>Ahmedabad & Palanpur</h3><p>Local accessibility paired with deep familiarity with Gujarat business dynamics.</p></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HINDI -->
+    <div id="block-hi" class="lang-content-block">
+        <div class="container">
+            <h2 class="section-title">ए जे एसोसिएट्स क्यों चुनें?</h2>
+            <div class="grid-4">
+                <div class="card"><h3>त्वरित प्रतिक्रिया</h3><p>हम आपके समय का सम्मान करते हैं। समय सीमा से पहले उत्तर दिए जाते हैं।</p></div>
+                <div class="card"><h3>विश्वसनीय विशेषज्ञता</h3><p>कठोर योग्यताओं और कर कानूनों के निरंतर ट्रैकिंग द्वारा समर्थित।</p></div>
+                <div class="card"><h3>समस्या-केंद्रित</h3><p>हम अंतर्निहित कर मुद्दों का विश्लेषण करते हैं और उन्हें हल करते हैं।</p></div>
+                <div class="card"><h3>अहमदाबाद और पालनपुर</h3><p>गुजरात में क्षेत्रीय व्यावसायिक गतिशीलता के साथ स्थानीय पहुंच।</p></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GUJARATI -->
+    <div id="block-gu" class="lang-content-block">
+        <div class="container">
+            <h2 class="section-title">AJ Associates શા માટે પસંદ કરવું?</h2>
+            <div class="grid-4">
+                <div class="card"><h3>ઝડપી પ્રતિસાદ</h3><p>અમે તમારા સમયનો આદર કરીએ છીએ. સમયમર્યાદા પહેલા પ્રશ્નોના જવાબો.</p></div>
+                <div class="card"><h3>વિશ્વસનીય કુશળતા</h3><p>સખત લાયકાતો અને કર કાયદાઓના સતત ટ્રૅકિંગ દ્વારા સમર્થિત.</p></div>
+                <div class="card"><h3>સમસ્યા-કેન્દ્રિત</h3><p>અમે અંતર્ગત કર સમસ્યાઓનું વિશ્લેષણ કરીએ છીએ અને તેને હલ કરીએ છીએ.</p></div>
+                <div class="card"><h3>અમદાવાદ અને પાલનપુર</h3><p>ગુજરાતમાં પ્રાદેશિક વ્યવસાય ગતિશીલતા સાથે સ્થાનિક પહોંચ.</p></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>AJ Associates</strong> | Clear Guidance. Reliable Compliance. Total Peace of Mind.</p>
+        <div class="copyright">© 2026 AJ Associates. All rights reserved.</div>
+    </footer>
+
+    <script>
+        function setLang(lang) {
+            document.querySelectorAll('.lang-content-block').forEach(el => el.classList.remove('active'));
+            document.getElementById('block-' + lang).classList.add('active');
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How We Work | Simple 4-Step CA Process - AJ Associates</title>
+    <meta name="description" content="Experience a seamless 4-step process with AJ Associates: understand your issue, plan compliance, execute accurately, and follow up.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">AJ ASSOCIATES</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="workflow.html">How We Work</a></li>
+                <li><a href="why-us.html">Why Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li class="lang-switch">
+                    <button class="lang-btn active" onclick="setLang('en')">EN</button>
+                    <button class="lang-btn" onclick="setLang('hi')">हिन्दी</button>
+                    <button class="lang-btn" onclick="setLang('gu')">ગુજરાતી</button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ENGLISH -->
+    <div id="block-en" class="lang-content-block active">
+        <div class="container">
+            <h2 class="section-title">Our Simple 4-Step Engagement Process</h2>
+            <div class="steps-grid">
+                <div class="step-box"><div class="step-num">01</div><h3>Understand the Issue</h3><p>We listen carefully to your requirements and diagnose the exact compliance need.</p></div>
+                <div class="step-box"><div class="step-num">02</div><h3>Plan</h3><p>We formulate a clear strategy outlining timelines, data required, and regulatory paths.</p></div>
+                <div class="step-box"><div class="step-num">03</div><h3>Execute</h3><p>We prepare and submit your filings, calculations, or audits with meticulous accuracy.</p></div>
+                <div class="step-box"><div class="step-num">04</div><h3>Follow Up</h3><p>We track statuses, handle departmental communications, and keep you informed.</p></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HINDI -->
+    <div id="block-hi" class="lang-content-block">
+        <div class="container">
+            <h2 class="section-title">हमारी सरल 4-चरणीय कार्य प्रक्रिया</h2>
+            <div class="steps-grid">
+                <div class="step-box"><div class="step-num">01</div><h3>समस्या को समझना</h3><p>हम आपकी आवश्यकताओं को सुनते हैं और सटीक अनुपालन आवश्यकता का निदान करते हैं।</p></div>
+                <div class="step-box"><div class="step-num">02</div><h3>योजना बनाना</h3><p>हम समय सीमा और आवश्यक डेटा की रूपरेखा तैयार करते हुए रणनीति बनाते हैं।</p></div>
+                <div class="step-box"><div class="step-num">03</div><h3>निष्पादित करना</h3><p>हम अत्यधिक सटीकता के साथ आपकी फाइलिंग और ऑडिट दस्तावेजों को जमा करते हैं।</p></div>
+                <div class="step-box"><div class="step-num">04</div><h3>फॉलो-अप</h3><p>हम स्थितियों को ट्रैक करते हैं और हर मील के पत्थर पर आपको सूचित रखते हैं।</p></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GUJARATI -->
+    <div id="block-gu" class="lang-content-block">
+        <div class="container">
+            <h2 class="section-title">અમારી સરળ 4-પગલાંની કાર્ય પ્રક્રિયા</h2>
+            <div class="steps-grid">
+                <div class="step-box"><div class="step-num">01</div><h3>સમસ્યાને સમજો</h3><p>અમે તમારી જરૂરિયાતો સાંભળીએ છીએ અને ચોક્કસ પાલન આવશ્યકતાનું નિદાન કરીએ છીએ.</p></div>
+                <div class="step-box"><div class="step-num">02</div><h3>આયોજન કરો</h3><p>અમે સમયમર્યાદા અને જરૂરી ડેટાની રૂપરેખા તૈયાર કરીને વ્યૂહરચના બનાવીએ છીએ.</p></div>
+                <div class="step-box"><div class="step-num">03</div><h3>અમલ કરો</h3><p>અમે ઝીણવટભરી ચોકસાઈ સાથે તમારી ફાઇલિંગ અને ઓડિટ સબમિટ કરીએ છીએ.</p></div>
+                <div class="step-box"><div class="step-num">04</div><h3>ફોલો-અપ</h3><p>અમે સ્થિતિને ટ્રૅક કરીએ છીએ અને દરેક સીમાચિહ્ન પર તમને માહિતી આપીએ છીએ.</p></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>AJ Associates</strong> | Clear Guidance. Reliable Compliance. Total Peace of Mind.</p>
+        <div class="copyright">© 2026 AJ Associates. All rights reserved.</div>
+    </footer>
+
+    <script>
+        function setLang(lang) {
+            document.querySelectorAll('.lang-content-block').forEach(el => el.classList.remove('active'));
+            document.getElementById('block-' + lang).classList.add('active');
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

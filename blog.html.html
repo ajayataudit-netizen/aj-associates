@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA Tax & GST Blog | AJ Associates Ahmedabad</title>
+    <meta name="description" content="Read expert insights on GST compliance, ITR filing deadlines, company registration, and tax saving tips from CA Ajay Joshi.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">AJ ASSOCIATES</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="workflow.html">How We Work</a></li>
+                <li><a href="why-us.html">Why Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li class="lang-switch">
+                    <button class="lang-btn active" onclick="setLang('en')">EN</button>
+                    <button class="lang-btn" onclick="setLang('hi')">हिन्दी</button>
+                    <button class="lang-btn" onclick="setLang('gu')">ગુજરાતી</button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ENGLISH -->
+    <div id="block-en" class="lang-content-block active">
+        <div class="container">
+            <h2 class="section-title">Tax & Compliance Insights (Blog)</h2>
+            <div class="card" style="margin-bottom: 2rem;">
+                <h3>Understanding Income Tax Scrutiny Notices: Steps to Respond Correctly</h3>
+                <p style="margin-top: 1rem; color: var(--gray);">Receiving a notice from the Income Tax Department can feel unsettling, but a notice is often an inquiry rather than a penalty. Under the Indian Income Tax framework, scrutiny assessments are conducted to verify the correctness of income declarations.</p>
+                <p style="margin-top: 1rem; color: var(--gray);"><strong>Common Reasons:</strong> Form 26AS/AIS mismatches, high-value financial transactions without corresponding income reporting, or random computer-aided selection.</p>
+                <p style="margin-top: 1rem; color: var(--gray);"><strong>Actionable Steps:</strong> Do not ignore the notice, check the DIN and section, gather supporting bank statements and invoices, and consult your Chartered Accountant to draft a precise response.</p>
+            </div>
+            <div class="card">
+                <h3>Other Topic Ideas:</h3>
+                <ul style="margin-top: 0.5rem; padding-left: 1.5rem; color: var(--gray);">
+                    <li>Top 5 Common GST Return Filing Mistakes to Avoid</li>
+                    <li>Private Limited Company vs. LLP: Which is Best for Your Startup?</li>
+                    <li>Tax Planning for Salaried Individuals Under Chapter VI-A</li>
+                    <li>Why Timely Statutory Audits Matter for SME Growth and Bank Financing</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- HINDI -->
+    <div id="block-hi" class="lang-content-block">
+        <div class="container">
+            <h2 class="section-title">कर और अनुपालन ब्लॉग</h2>
+            <div class="card">
+                <h3>आयकर जांच (Scrutiny) नोटिस को समझना: सही ढंग से प्रतिक्रिया देना</h3>
+                <p style="margin-top: 1rem; color: var(--gray);">आयकर विभाग से नोटिस प्राप्त करना चिंताजनक लग सकता है, लेकिन यह अक्सर एक पूछताछ होती है। फॉर्म 26AS/AIS बेमेल या उच्च-मूल्य के वित्तीय लेनदेन इसके सामान्य कारण हैं। नोटिस को नजरअंदाज न करें और अपने चार्टर्ड अकाउंटेंट से परामर्श करें।</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- GUJARATI -->
+    <div id="block-gu" class="lang-content-block">
+        <div class="container">
+            <h2 class="section-title">કર અને પાલન બ્લોગ</h2>
+            <div class="card">
+                <h3>આવકવેરા તપાસ (Scrutiny) નોટિસને સમજવી: યોગ્ય રીતે જવાબ આપવો</h3>
+                <p style="margin-top: 1rem; color: var(--gray);">આવકવેરા વિભાગ તરફથી નોટિસ મેળવવી એ પૂછપરછ હોય છે. ફોર્મ 26AS/AIS અસંગતતા અથવા ઊંચા મૂલ્યના લેણદેણ સામાન્ય કારણો છે. નોટિસ અવગણશો નહીં અને તમારા ચાર્ટर्ड એકાઉન્ટન્ટની સલાહ લો.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>AJ Associates</strong> | Clear Guidance. Reliable Compliance. Total Peace of Mind.</p>
+        <div class="copyright">© 2026 AJ Associates. All rights reserved.</div>
+    </footer>
+
+    <script>
+        function setLang(lang) {
+            document.querySelectorAll('.lang-content-block').forEach(el => el.classList.remove('active'));
+            document.getElementById('block-' + lang).classList.add('active');
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
